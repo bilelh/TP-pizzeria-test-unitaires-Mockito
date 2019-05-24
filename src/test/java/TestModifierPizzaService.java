@@ -73,6 +73,6 @@ public class TestModifierPizzaService {
 		ModifierPizzaService modif = new ModifierPizzaService();
 		systemInMock.provideLines("ORI" , "REG" , "Regina" , "10" , "Viande");
 		
-		modif.executeUC(mockedDao);
+		modif.executeUC(mockedDao); 
 	}
 }
