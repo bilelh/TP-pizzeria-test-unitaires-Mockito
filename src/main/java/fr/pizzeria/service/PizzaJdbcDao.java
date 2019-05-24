@@ -54,30 +54,18 @@ public class PizzaJdbcDao implements IPizzaDao {
 			PreparedStatement insertPizzaSt = (PreparedStatement) connection.prepareStatement("SELECT * FROM pizzas");
 			
 			
-			
-			
-			
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
-		
-		
-		
-		
 		deconnecter() ;
 	}
-	
-	
-	
-	
 	
 	public List <Pizza> findAllPizzas() {
 		
 		connecter() ;
 		
-		List <Pizza> listPizza = new ArrayList ();
+		List <Pizza> listPizza = new ArrayList<Pizza> ();
 		
 		try {
 			PreparedStatement selectPizzaSt = (PreparedStatement) connection.prepareStatement("SELECT * FROM pizzas");
